@@ -6,6 +6,12 @@ body.dark-mode {
   background: #1a1a1a;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body.dark-mode .container {
   background: #1a1a1a;
 }
@@ -193,8 +199,7 @@ body.dark-mode .container {
   --color-sidebar-accent: var(--sidebar-accent);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-ring
 }
 
-@layer base {
-  @apply border-border outline-r
+/*# sourceMappingURL=app_globals_css_0w3-wzy._.single.css.map*/

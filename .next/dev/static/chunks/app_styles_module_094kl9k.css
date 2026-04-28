@@ -239,6 +239,7 @@
   background: none;
   border: 2px solid #00897b;
   border-radius: 24px;
+  margin-top: 10px;
   margin-bottom: 40px;
   padding: 11px 28px;
   font-size: .95rem;
@@ -680,15 +681,6 @@
   background: #00695c;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px #00897b4d;
-}
-
-.styles-module__34Gd5q__cartOverlay {
-  z-index: 1000;
-  background: #00000080;
-  justify-content: flex-end;
-  display: flex;
-  position: fixed;
-  inset: 0;
 }
 
 .styles-module__34Gd5q__cartSidebar {

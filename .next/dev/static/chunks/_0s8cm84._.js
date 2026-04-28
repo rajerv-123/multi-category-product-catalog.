@@ -484,7 +484,6 @@ __turbopack_context__.v({
   "cartItem": "styles-module__34Gd5q__cartItem",
   "cartItemInfo": "styles-module__34Gd5q__cartItemInfo",
   "cartItems": "styles-module__34Gd5q__cartItems",
-  "cartOverlay": "styles-module__34Gd5q__cartOverlay",
   "cartSidebar": "styles-module__34Gd5q__cartSidebar",
   "categorySection": "styles-module__34Gd5q__categorySection",
   "categoryTitle": "styles-module__34Gd5q__categoryTitle",
@@ -861,36 +860,8 @@ function Home() {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].detailContent,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].detailActions,
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].actionBtn} ${isFavorite ? __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].favorited : ''}`,
-                                            onClick: (e)=>toggleFavorite(selectedItem.itemname, e),
-                                            children: [
-                                                isFavorite ? '❤️' : '🤍',
-                                                " ",
-                                                isFavorite ? 'Favorited' : 'Add to Favorites'
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/page.jsx",
-                                            lineNumber: 202,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].actionBtn} ${isComparing ? __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].comparing : ''}`,
-                                            onClick: (e)=>toggleCompare(selectedItem, e),
-                                            children: [
-                                                isComparing ? '✓' : '+',
-                                                " ",
-                                                isComparing ? 'Added to Compare' : 'Add to Compare'
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/page.jsx",
-                                            lineNumber: 208,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].detailActions
+                                }, void 0, false, {
                                     fileName: "[project]/app/page.jsx",
                                     lineNumber: 201,
                                     columnNumber: 13
@@ -900,7 +871,7 @@ function Home() {
                                     children: selectedItem.itemname
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.jsx",
-                                    lineNumber: 216,
+                                    lineNumber: 205,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -908,16 +879,7 @@ function Home() {
                                     children: selectedItem.category
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.jsx",
-                                    lineNumber: 217,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].addToCartBtn,
-                                    onClick: (e)=>addToCart(selectedItem, e),
-                                    children: inCart ? `In Cart (${inCart.quantity})` : '🛒 Add to Cart'
-                                }, void 0, false, {
-                                    fileName: "[project]/app/page.jsx",
-                                    lineNumber: 219,
+                                    lineNumber: 206,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -928,7 +890,7 @@ function Home() {
                                             children: "Specifications"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.jsx",
-                                            lineNumber: 227,
+                                            lineNumber: 211,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -941,7 +903,7 @@ function Home() {
                                                             children: prop.label
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.jsx",
-                                                            lineNumber: 231,
+                                                            lineNumber: 215,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -949,24 +911,24 @@ function Home() {
                                                             children: prop.value
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.jsx",
-                                                            lineNumber: 232,
+                                                            lineNumber: 216,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, idx, true, {
                                                     fileName: "[project]/app/page.jsx",
-                                                    lineNumber: 230,
+                                                    lineNumber: 214,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.jsx",
-                                            lineNumber: 228,
+                                            lineNumber: 212,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.jsx",
-                                    lineNumber: 226,
+                                    lineNumber: 210,
                                     columnNumber: 13
                                 }, this)
                             ]
@@ -992,131 +954,6 @@ function Home() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: `${__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].container} ${darkMode ? __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].dark : ''}`,
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].toolbar,
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].searchWrapper,
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].searchIcon,
-                                children: "🔍"
-                            }, void 0, false, {
-                                fileName: "[project]/app/page.jsx",
-                                lineNumber: 249,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                type: "text",
-                                placeholder: "Search products...",
-                                value: searchQuery,
-                                onChange: (e)=>setSearchQuery(e.target.value),
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].searchInput
-                            }, void 0, false, {
-                                fileName: "[project]/app/page.jsx",
-                                lineNumber: 250,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/page.jsx",
-                        lineNumber: 248,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].toolbarActions,
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                value: sortBy,
-                                onChange: (e)=>setSortBy(e.target.value),
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].sortSelect,
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                        value: "default",
-                                        children: "Sort by..."
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/page.jsx",
-                                        lineNumber: 265,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                        value: "name-asc",
-                                        children: "Name (A-Z)"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/page.jsx",
-                                        lineNumber: 266,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                        value: "name-desc",
-                                        children: "Name (Z-A)"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/page.jsx",
-                                        lineNumber: 267,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                        value: "category",
-                                        children: "Category"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/page.jsx",
-                                        lineNumber: 268,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/page.jsx",
-                                lineNumber: 260,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: `${__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].toolbarBtn} ${darkMode ? __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].active : ''}`,
-                                onClick: ()=>setDarkMode(!darkMode),
-                                children: darkMode ? '☀️' : '🌙'
-                            }, void 0, false, {
-                                fileName: "[project]/app/page.jsx",
-                                lineNumber: 271,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: `${__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].toolbarBtn} ${compareList.length > 0 ? __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].hasItems : ''}`,
-                                onClick: ()=>setShowCompare(true),
-                                disabled: compareList.length === 0,
-                                children: [
-                                    "⚖️ Compare (",
-                                    compareList.length,
-                                    ")"
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/page.jsx",
-                                lineNumber: 278,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: `${__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].toolbarBtn} ${cartTotal > 0 ? __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].hasItems : ''}`,
-                                onClick: ()=>setShowCart(true),
-                                children: [
-                                    "🛒 Cart (",
-                                    cartTotal,
-                                    ")"
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/page.jsx",
-                                lineNumber: 286,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/page.jsx",
-                        lineNumber: 259,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/page.jsx",
-                lineNumber: 247,
-                columnNumber: 7
-            }, this),
             showCart && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].cartOverlay,
                 onClick: ()=>setShowCart(false),
@@ -1131,7 +968,7 @@ function Home() {
                                     children: "Shopping Cart"
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.jsx",
-                                    lineNumber: 300,
+                                    lineNumber: 237,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1140,13 +977,13 @@ function Home() {
                                     children: "×"
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.jsx",
-                                    lineNumber: 301,
+                                    lineNumber: 238,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/page.jsx",
-                            lineNumber: 299,
+                            lineNumber: 236,
                             columnNumber: 13
                         }, this),
                         cart.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1154,7 +991,7 @@ function Home() {
                             children: "Your cart is empty"
                         }, void 0, false, {
                             fileName: "[project]/app/page.jsx",
-                            lineNumber: 305,
+                            lineNumber: 242,
                             columnNumber: 15
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
@@ -1168,7 +1005,7 @@ function Home() {
                                                     alt: item.itemname
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.jsx",
-                                                    lineNumber: 311,
+                                                    lineNumber: 248,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1178,14 +1015,14 @@ function Home() {
                                                             children: item.itemname
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.jsx",
-                                                            lineNumber: 313,
+                                                            lineNumber: 250,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                             children: item.category
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/page.jsx",
-                                                            lineNumber: 314,
+                                                            lineNumber: 251,
                                                             columnNumber: 25
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1196,14 +1033,14 @@ function Home() {
                                                                     children: "−"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/page.jsx",
-                                                                    lineNumber: 316,
+                                                                    lineNumber: 253,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: item.quantity
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/page.jsx",
-                                                                    lineNumber: 317,
+                                                                    lineNumber: 254,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1211,19 +1048,19 @@ function Home() {
                                                                     children: "+"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/page.jsx",
-                                                                    lineNumber: 318,
+                                                                    lineNumber: 255,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/page.jsx",
-                                                            lineNumber: 315,
+                                                            lineNumber: 252,
                                                             columnNumber: 25
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/page.jsx",
-                                                    lineNumber: 312,
+                                                    lineNumber: 249,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1232,18 +1069,18 @@ function Home() {
                                                     children: "×"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.jsx",
-                                                    lineNumber: 321,
+                                                    lineNumber: 258,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, idx, true, {
                                             fileName: "[project]/app/page.jsx",
-                                            lineNumber: 310,
+                                            lineNumber: 247,
                                             columnNumber: 21
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.jsx",
-                                    lineNumber: 308,
+                                    lineNumber: 245,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1256,13 +1093,13 @@ function Home() {
                                                     children: cartTotal
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.jsx",
-                                                    lineNumber: 331,
+                                                    lineNumber: 268,
                                                     columnNumber: 35
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/page.jsx",
-                                            lineNumber: 331,
+                                            lineNumber: 268,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1270,13 +1107,13 @@ function Home() {
                                             children: "Checkout"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.jsx",
-                                            lineNumber: 332,
+                                            lineNumber: 269,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.jsx",
-                                    lineNumber: 330,
+                                    lineNumber: 267,
                                     columnNumber: 17
                                 }, this)
                             ]
@@ -1284,12 +1121,12 @@ function Home() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/page.jsx",
-                    lineNumber: 298,
+                    lineNumber: 235,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.jsx",
-                lineNumber: 297,
+                lineNumber: 234,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
@@ -1299,32 +1136,20 @@ function Home() {
                         children: "Product Catalog"
                     }, void 0, false, {
                         fileName: "[project]/app/page.jsx",
-                        lineNumber: 341,
+                        lineNumber: 278,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: "Browse our multi-category collection"
                     }, void 0, false, {
                         fileName: "[project]/app/page.jsx",
-                        lineNumber: 342,
+                        lineNumber: 279,
                         columnNumber: 9
-                    }, this),
-                    favorites.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].favoritesBadge,
-                        children: [
-                            "❤️ ",
-                            favorites.length,
-                            " Favorites"
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/page.jsx",
-                        lineNumber: 345,
-                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.jsx",
-                lineNumber: 340,
+                lineNumber: 277,
                 columnNumber: 7
             }, this),
             searchQuery && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1340,7 +1165,7 @@ function Home() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.jsx",
-                lineNumber: 352,
+                lineNumber: 285,
                 columnNumber: 9
             }, this),
             categories.map((category)=>{
@@ -1354,7 +1179,7 @@ function Home() {
                             children: category
                         }, void 0, false, {
                             fileName: "[project]/app/page.jsx",
-                            lineNumber: 364,
+                            lineNumber: 297,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1375,7 +1200,7 @@ function Home() {
                                                     children: "❤️"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.jsx",
-                                                    lineNumber: 379,
+                                                    lineNumber: 312,
                                                     columnNumber: 38
                                                 }, this),
                                                 isComparing && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1383,13 +1208,13 @@ function Home() {
                                                     children: "⚖️"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.jsx",
-                                                    lineNumber: 380,
+                                                    lineNumber: 313,
                                                     columnNumber: 39
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/page.jsx",
-                                            lineNumber: 378,
+                                            lineNumber: 311,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1398,7 +1223,7 @@ function Home() {
                                             children: isFavorite ? '❤️' : '🤍'
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.jsx",
-                                            lineNumber: 383,
+                                            lineNumber: 316,
                                             columnNumber: 21
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1408,73 +1233,30 @@ function Home() {
                                                 alt: item.itemname
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.jsx",
-                                                lineNumber: 391,
+                                                lineNumber: 324,
                                                 columnNumber: 23
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.jsx",
-                                            lineNumber: 390,
-                                            columnNumber: 21
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].cardContent,
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    children: item.itemname
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/page.jsx",
-                                                    lineNumber: 395,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].cardActions,
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].addCartBtn,
-                                                            onClick: (e)=>addToCart(item, e),
-                                                            children: inCart ? `🛒 ${inCart.quantity}` : '🛒'
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/page.jsx",
-                                                            lineNumber: 397,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: `${__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].compareBtn} ${isComparing ? __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$styles$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].active : ''}`,
-                                                            onClick: (e)=>toggleCompare(item, e),
-                                                            children: isComparing ? '✓' : '⚖️'
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/page.jsx",
-                                                            lineNumber: 403,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/app/page.jsx",
-                                                    lineNumber: 396,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/page.jsx",
-                                            lineNumber: 394,
+                                            lineNumber: 323,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, idx, true, {
                                     fileName: "[project]/app/page.jsx",
-                                    lineNumber: 373,
+                                    lineNumber: 306,
                                     columnNumber: 19
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/app/page.jsx",
-                            lineNumber: 366,
+                            lineNumber: 299,
                             columnNumber: 13
                         }, this)
                     ]
                 }, category, true, {
                     fileName: "[project]/app/page.jsx",
-                    lineNumber: 363,
+                    lineNumber: 296,
                     columnNumber: 11
                 }, this);
             }),
@@ -1489,7 +1271,7 @@ function Home() {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/page.jsx",
-                        lineNumber: 421,
+                        lineNumber: 354,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1497,19 +1279,19 @@ function Home() {
                         children: "Clear Search"
                     }, void 0, false, {
                         fileName: "[project]/app/page.jsx",
-                        lineNumber: 422,
+                        lineNumber: 355,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/page.jsx",
-                lineNumber: 420,
+                lineNumber: 353,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.jsx",
-        lineNumber: 245,
+        lineNumber: 229,
         columnNumber: 5
     }, this);
 }
