@@ -1,75 +1,47 @@
-# Multi-Category Product Catalog
 
-A modern, visually stunning product catalog built with Next.js featuring glassmorphism design, animated backgrounds, and smooth interactions.
+This approach delivers a visually striking, fast, and functional product catalog with modern UX patterns—all without heavy dependencies
 
-Currently, two official plugins are available:
+ Tools & Technologies Used
+Category	Technology
+Framework	Next.js 16 (React)
+Styling	CSS Modules + Custom CSS Variables
+Language	JavaScript (React Hooks)
+Data	Local JSON data array
+Storage	Browser localStorage (favorites, cart, dark mode)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+ Idea & Approach
+Minimalist Cleanup First
+Removed unused folders (src/, styles/, hooks/, components/) that were leftover from project scaffolding. This reduced confusion and improved maintainability.
 
-## React Compiler
+Dark Theme with Animated Background
+Instead of a plain white background, I created a deep space-themed design with:
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Floating gradient orbs that animate continuously
+Pulsing glow effects in the header
+Glassmorphism cards with backdrop blur
+Progressive Enhancement
 
-Note: This will impact Vite dev & build performances.
+Cards have hover effects (lift + glow)
+Detail view includes action buttons
+Cart sidebar slides in smoothly
+Floating action buttons for quick access
+User Experience Focus
 
-## Expanding the ESLint configuration
+localStorage persists favorites & cart across sessions
+Floating buttons show real-time counts
+Compare feature allows side-by-side product specs
+Responsive design works on mobile
+Performance
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+No external UI libraries (lightweight)
+CSS-only animations (no JS animation libraries)
+Static data filtering (fast)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+├── app/
+│   ├── page.jsx       # Main catalog component
+│   ├── styles.module.css  # Creative styling
+│   └── globals.css    # Base styles
+├── data.js            # Product data
+├── public/            # Static assets
+└── package.json       # Dependencies
