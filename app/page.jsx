@@ -137,7 +137,13 @@ export default function Home() {
     });
 
     return (
-      <div className={`${styles.container} ${darkMode ? styles.dark : ''}`}>
+      <div className={styles.container}>
+        <div className={styles.background}>
+          <div className={`${styles.orb} ${styles.orb1}`}></div>
+          <div className={`${styles.orb} ${styles.orb2}`}></div>
+          <div className={`${styles.orb} ${styles.orb3}`}></div>
+        </div>
+        
         <button className={styles.backBtn} onClick={() => setShowCompare(false)}>
           ← Back to Catalog
         </button>
@@ -187,7 +193,13 @@ export default function Home() {
     const isComparing = compareList.find(i => i.itemname === selectedItem.itemname);
 
     return (
-      <div className={`${styles.container} ${darkMode ? styles.dark : ''}`}>
+      <div className={styles.container}>
+        <div className={styles.background}>
+          <div className={`${styles.orb} ${styles.orb1}`}></div>
+          <div className={`${styles.orb} ${styles.orb2}`}></div>
+          <div className={`${styles.orb} ${styles.orb3}`}></div>
+        </div>
+        
         <button className={styles.backBtn} onClick={handleBack}>
           ← Back to Catalog
         </button>
@@ -199,7 +211,24 @@ export default function Home() {
 
           <div className={styles.detailContent}>
             <div className={styles.detailActions}>
-
+              <button 
+                className={`${styles.detailActionBtn} ${styles.primary}`}
+                onClick={(e) => addToCart(selectedItem, e)}
+              >
+                {inCart ? `🛒 Added (${inCart.quantity})` : '🛒 Add to Cart'}
+              </button>
+              <button 
+                className={`${styles.detailActionBtn} ${styles.secondary} ${isFavorite ? styles.active : ''}`}
+                onClick={(e) => toggleFavorite(selectedItem.itemname, e)}
+              >
+                {isFavorite ? '❤️' : '🤍'} Favorite
+              </button>
+              <button 
+                className={`${styles.detailActionBtn} ${styles.secondary} ${isComparing ? styles.active : ''}`}
+                onClick={(e) => toggleCompare(selectedItem, e)}
+              >
+                {isComparing ? '✓' : '⚖️'} Compare
+              </button>
             </div>
 
             <h1 className={styles.detailTitle}>{selectedItem.itemname}</h1>
@@ -226,9 +255,13 @@ export default function Home() {
 
   // Main Catalog View
   return (
-    <div className={`${styles.container} ${darkMode ? styles.dark : ''}`}>
-
-
+    <div className={styles.container}>
+      {/* Animated Background */}
+      <div className={styles.background}>
+        <div className={`${styles.orb} ${styles.orb1}`}></div>
+        <div className={`${styles.orb} ${styles.orb2}`}></div>
+        <div className={`${styles.orb} ${styles.orb3}`}></div>
+      </div>
 
       {showCart && (
         <div className={styles.cartOverlay} onClick={() => setShowCart(false)}>
@@ -239,7 +272,7 @@ export default function Home() {
             </div>
 
             {cart.length === 0 ? (
-              <p className={styles.emptyCart}>Your cart is empty</p>
+              <p className={styles.emptyCart}>Your cart is empty 🛒</p>
             ) : (
               <>
                 <div className={styles.cartItems}>
@@ -276,9 +309,7 @@ export default function Home() {
 
       <header className={styles.header}>
         <h1>Product Catalog</h1>
-        <p>Browse our multi-category collection</p>
-
-
+        <p>Explore our multi-category collection ✨</p>
       </header>
 
       {searchQuery && (
