@@ -104,7 +104,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "d:\\Projects\\multi-category product catalog",
+    "outputFileTracingRoot": "D:\\Projects\\multi-category product catalog",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -305,11 +305,11 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.js",
     "turbopack": {
-      "root": "d:\\Projects\\multi-category product catalog"
+      "root": "D:\\Projects\\multi-category product catalog"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "d:\\Projects\\multi-category product catalog",
+  "appDir": "D:\\Projects\\multi-category product catalog",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",
