@@ -1,6 +1,6 @@
-# React + TypeScript + Vite
+# Multi-Category Product Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, visually stunning product catalog built with Next.js featuring glassmorphism design, animated backgrounds, and smooth interactions.
 
 Currently, two official plugins are available:
 
